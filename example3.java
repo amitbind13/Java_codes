@@ -1,19 +1,12 @@
 import java.util.Scanner;
-class number
-{
-	int n;
-}
-class example3
-{
-	public static void main(String s[])
-	{
-		Scanner in=new Scanner(System.in);
-		number n1=new number();
-		number n2=new number();
-		System.out.println("Enter any two number");
-		n1.n=in.nextInt();
-		n2.n=in.nextInt();
-		System.out.println(n1.n);
-		System.out.print(n2.n);
-	}
+public class Example3 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter any two numbers:");
+        int number1 = scanner.nextInt();
+        int number2 = scanner.nextInt();
+        System.out.println(number1);
+        System.out.println(number2);
+        scanner.close(); // Close the scanner to prevent resource leaks
+    }
 }
